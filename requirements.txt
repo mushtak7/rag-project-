@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+python-multipart
+pymupdf
+langchain
+langchain-google-genai
+langchain-community
+langchain-text-splitters
+faiss-cpu
+python-dotenv
+python-jose[cryptography]
+bcrypt
+sqlalchemy
