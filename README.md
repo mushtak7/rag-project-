@@ -1,3 +1,5 @@
+LIVE ON - https://docintel-production-a44e.up.railway.app/
+
 # 📑 DocIntel — Enterprise AI Document Intelligence System
 
 DocIntel is a premium, high-performance RAG (Retrieval-Augmented Generation) application designed for enterprise document search and chat intelligence. It allows users to upload multiple PDF documents, indices them locally using **FAISS vector embeddings**, and provides semantic chat capabilities with source context highlighting directly on a PDF canvas.
