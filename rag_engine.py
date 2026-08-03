@@ -2,7 +2,8 @@ import os
 import fitz  # PyMuPDF
 from typing import List, Dict, Any, Optional
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
+from langchain_google_genai import GoogleGenerativeAIEmbeddings
+from langchain_groq import ChatGroq
 from langchain_community.vectorstores import FAISS
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.documents import Document
@@ -40,7 +41,7 @@ def _get_embeddings():
 
 
 def _get_llm():
-    return ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0.2)
+    return ChatGroq(model="llama-3.3-70b-versatile", temperature=0.2)
 
 
 
