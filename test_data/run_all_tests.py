@@ -566,7 +566,8 @@ def run_test_7_vanilla():
     load_dotenv(os.path.join(os.path.dirname(PDF_DIR), ".env"))
     api_key = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel("gemini-2.5-flash")
+    model = genai.GenerativeModel("gemini-2.0-flash")
+
 
     # Same 12 factual questions from Test 1 — but WITHOUT document context
     questions = [
